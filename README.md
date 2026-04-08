@@ -1,2 +1,2 @@
-# My Profolio webpage
+# My Portfolio webpage
 Web Design
