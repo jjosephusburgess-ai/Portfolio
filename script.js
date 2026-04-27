@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {
         themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const isDark = document.body.classList.contains('dark-mode');
+            const isDark = document.body.classList.toggle('dark-mode');
+            document.documentElement.classList.toggle('dark-mode', isDark);
             localStorage.setItem('darkMode', isDark);
             themeToggle.textContent = isDark ? '☀️' : '🌙';
         });
@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Restore saved theme preference
         if (localStorage.getItem('darkMode') === 'true') {
             document.body.classList.add('dark-mode');
+            document.documentElement.classList.add('dark-mode');
             themeToggle.textContent = '☀️';
         }
     }
