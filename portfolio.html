@@ -1,68 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | J Josephus Burgess Jr.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar">
-<div class="logo">J Josephus Burgess.Jr</div>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="index.html">Back to Home</a></li>
-</ul>
-</nav>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">J Josephus Burgess.Jr</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle">🌙</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
 
-<section class="portfolio-page">
-<h1>My Portfolio</h1>
-<p>A Showcase of My Latest Work</p>
-<div class="portfolio-grid">
+    <section class="portfolio-page">
+        <h1 class="animate-on-scroll">My Creative Works</h1>
+        <p class="animate-on-scroll">A Showcase of My Latest Web & Architectural Projects</p>
+        
+        <div class="portfolio-grid">
 
-<div class="portfolio-item">
-  <div class="two-images">
-    <img src="images/01.jpeg" alt="">
-    <img src="images/02.jpeg" alt="">
-  </div>
-  <h3>Website Design</h3>
-</div>
+            <div class="portfolio-item animate-on-scroll">
+                <div class="two-images">
+                    <img src="images/01.jpeg" alt="Website Design 1">
+                    <img src="images/02.jpeg" alt="Website Design 2">
+                </div>
+                <h3>Modern Web Design</h3>
+                <p>A clean, responsive website built with HTML &amp; CSS.</p>
+                <a href="#" class="view-link">View Project &rarr;</a>
+            </div>
 
-<div class="portfolio-item">
-<img src="p2.jpg">
-<h3>E-Commerce Site</h3>
-</div>
+            <div class="portfolio-item animate-on-scroll">
+                <img src="images/p2.jpg" alt="E-Commerce Project">
+                <h3>E-Commerce Solution</h3>
+                <p>Full product catalog with cart and checkout flow.</p>
+                <a href="#" class="view-link">View Project &rarr;</a>
+            </div>
 
-<div class="portfolio-item">
-<img src="p3.jpg">
-<h3>Mobile App</h3>
-</div>
+            <div class="portfolio-item animate-on-scroll">
+                <img src="images/p3.jpg" alt="Mobile App UI">
+                <h3>Mobile App Interface</h3>
+                <p>High-fidelity mobile UI design crafted in Figma.</p>
+                <a href="#" class="view-link">View Project &rarr;</a>
+            </div>
 
-<div class="portfolio-item">
-<img src="p4.jpg">
-<h3>Brand Identity</h3>
-</div>
+            <div class="portfolio-item animate-on-scroll">
+                <img src="images/p4.jpg" alt="Brand Identity">
+                <h3>Brand Identity Design</h3>
+                <p>Complete visual identity: logo, colors, and typography.</p>
+                <a href="#" class="view-link">View Project &rarr;</a>
+            </div>
 
-<div class="portfolio-item">
-<img src="p5.jpg">
-<h3>Landing Page</h3>
-</div>
+            <div class="portfolio-item animate-on-scroll">
+                <img src="images/p5.jpg" alt="Landing Page">
+                <h3>Marketing Landing Page</h3>
+                <p>High-conversion landing page with animated sections.</p>
+                <a href="#" class="view-link">View Project &rarr;</a>
+            </div>
 
-<div class="portfolio-item">
-<img src="p6.jpg">
-<h3>Photography</h3>
-</div>
+            <div class="portfolio-item animate-on-scroll">
+                <img src="images/p6.jpg" alt="Architectural Drafting">
+                <h3>Architectural Drafting</h3>
+                <p>Technical floor plans and 3D visualizations.</p>
+                <a href="#" class="view-link">View Project &rarr;</a>
+            </div>
 
-</div>
-</section>
+        </div>
+    </section>
 
-<footer>
-<p>© 2026 J Josephus Burgess.Jr All Rights Reserved</p>
-<div class="social">
-      <a href="#">LinkedIn</a> | <a href="#">Fiverr</a> | <a href="#">Upwork</a>
-    </div>
-</footer>
+    <footer>
+        <p>© 2026 J Josephus Burgess Jr. All Rights Reserved</p>
+        <div class="social">
+            <a href="#">LinkedIn</a>
+            <a href="#">Fiverr</a>
+            <a href="#">Upwork</a>
+        </div>
+    </footer>
 
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
