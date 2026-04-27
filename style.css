@@ -24,6 +24,7 @@
 html {
     scroll-behavior: smooth;
     background: var(--bg-light);
+    height: 100%;
 }
 
 body {
@@ -32,9 +33,10 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     transition: var(--transition);
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 body.dark-mode {
@@ -458,6 +460,9 @@ footer {
     text-align: center;
     padding: 4rem 10%;
     margin-top: auto;
+    width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 .social {
